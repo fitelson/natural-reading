@@ -1,0 +1,37 @@
+# Generated narration, subtitles, and delivery archives
+*.mp3
+*.wav
+*.m4a
+*.aac
+*.flac
+*.ogg
+*.opus
+*.srt
+*.vtt
+*.zip
+
+# Source extractions, temporary work, and outputs
+work/
+outputs/
+tmp/
+*.tmp
+*.log
+
+# Local environments and caches
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+.cache/
+.pytest_cache/
+.DS_Store
+
+# Local credentials and secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials.json
+*.pem
+*.key

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Natural Reading"
+  short_description: "Read URLs, PDFs, and text in a natural voice"
+  default_prompt: "Use $natural-reading to turn this URL, PDF, or text into an audio recording with the default Andrew voice and pacing."
