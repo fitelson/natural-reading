@@ -24,4 +24,4 @@ Read this reference for webpage URLs or PDF inputs. The narration defaults in `S
 
 - Treat cleaned text as a faithful reading script, not a summary. Numeric citation-marker removal follows `SKILL.md`; substantive notes and reference sections are not citation markers.
 - Preserve a useful source-based filename, with a unique suffix when necessary. Use the task's `outputs/` for the final MP3 and optionally a cleaned transcript when useful or requested.
-- For long sources, compare source coverage and the ending against generated subtitle text in addition to checking successful synthesis and audio decoding. Duration alone cannot establish complete coverage. Original subtitle times apply to the base recording; retime them if delivering them with slowed audio.
+- For long sources, compare source coverage and the ending against generated subtitle text in addition to checking successful synthesis and audio decoding. Duration alone cannot establish complete coverage. Original subtitle times match the generated recording; retime them only if the user requests subsequent tempo processing.

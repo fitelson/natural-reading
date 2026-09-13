@@ -1,6 +1,6 @@
 # Install Natural Reading
 
-Natural Reading is an agent skill for converting a URL, PDF, or text into an MP3. Its defaults are Microsoft AndrewNeural (American English) and a relaxed reading pace. It uses Microsoft's online speech service through the third-party `edge-tts` package. An internet connection is required; an API key and the Edge browser are not required. Source text is sent to Microsoft's service. Saved recordings can be played offline.
+Natural Reading is an agent skill for converting a URL, PDF, or text into an MP3. Its defaults are Microsoft AndrewNeural (American English) with its native default rate, volume, and pitch. It uses Microsoft's online speech service through the third-party `edge-tts` package. An internet connection is required; an API key and the Edge browser are not required. Source text is sent to Microsoft's service. Saved recordings can be played offline.
 
 ## Add the skill to Codex
 
@@ -17,7 +17,7 @@ Or provide a webpage URL or pasted text. You can override the voice, speed, or s
 The package contains instructions for the agent, not a standalone converter or bundled speech models. It needs:
 
 - Python and `edge-tts` in an isolated environment.
-- FFmpeg (including `ffprobe`) for the default pacing and audio verification.
+- FFmpeg (including `ffprobe`) for audio verification and any explicitly requested tempo processing.
 - For PDFs: Poppler or `pdfplumber`/`pypdf`; scanned PDFs also need an OCR tool such as Tesseract.
 - For webpages: the agent's web tools or an HTML article extractor such as `trafilatura` when needed.
 

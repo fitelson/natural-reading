@@ -19,7 +19,7 @@ You can also supply pasted text or a text file, and request another voice or pac
 ## Defaults
 
 - Voice: `en-US-AndrewNeural` (American English).
-- Generate with `--rate=+5%`, then apply FFmpeg's pitch-preserving `atempo=0.9025` once.
+- Generate with `python3 -m edge_tts --voice en-US-AndrewNeural` using the Python environment containing the package (or the equivalent `edge-tts` command). Keep the native default rate, volume, and pitch; no tempo processing.
 - Preserve wording and order, omitting numeric citation markers during normal article narration.
 - Save intermediates in the task's `work/` and final audio in `outputs/`.
 
@@ -27,6 +27,6 @@ See [SKILL.md](SKILL.md) for generation, verification, and delivery, and [source
 
 ## Tested scope and limitations
 
-The originating macOS test on September 13, 2026 used `edge-tts` 7.2.8 and a complete webpage article. Extraction matched the supplied comparison text after normalization of punctuation, spacing, and numeric citation markers. All 2,722 narration-script word tokens matched generated subtitle text. The final MP3 decoded completely and lasted 1,058.8 seconds. These checks establish text coverage and a decodable recording, not perfect pronunciation.
+The originating macOS test on September 13, 2026 used `edge-tts` 7.2.8 and a complete webpage article, with the earlier custom pacing settings. Extraction matched the supplied comparison text after normalization of punctuation, spacing, and numeric citation markers. All 2,722 narration-script word tokens matched generated subtitle text. The final MP3 decoded completely and lasted 1,058.8 seconds. These checks establish text coverage and a decodable recording, not perfect pronunciation. That recording predates the switch to native voice defaults; its duration does not describe the current default pace.
 
 PDF extraction and narration are documented but have not yet been exercised. Windows and Linux have not been tested with this skill. The online speech integration may require client updates when Microsoft's service changes.
